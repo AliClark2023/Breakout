@@ -50,3 +50,12 @@ Changes made:
 - modified brick manager to set flags, marking the destruction of a brick upon collision with ball
 - modified brick manager to handle destruction of bricks in render cycle (removes from vector if marked for destruction)
 
+### Rudimentary menu system
+Time to implement: 27m
+
+Changes made:
+- States added to game manager to dictate various game states (Started, completed, paused, game over)
+- Function added to display UI text when in certain states
+- Menu UI is activated by: pausing game and completing or losing game
+- Function added to close game windows when input key is activated (Q) while menu UI is active
+- Function added to reset game when input key is activated (R) while menu UI is active
