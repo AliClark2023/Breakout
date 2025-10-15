@@ -33,3 +33,8 @@ fire ball (green)
 
 # Time Details and Changelist
 <Add information to this section about the time you've taken for this task along with a professional changelist.>
+
+## Complier issue fixed
+Cause: derived powerup class (PowerUpFireBall) header file was included into the base class header causing a compiler loop
+Time to fix: 9 mins
+
