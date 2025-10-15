@@ -80,7 +80,8 @@ void Ball::update(float dt)
     }
 
     // collision with bricks
-    int collisionResponse = _gameManager->getBrickManager()->checkCollision(_sprite, _direction);
+    // ideally change _isFireball to a ball status enum for better responses
+    int collisionResponse = _gameManager->getBrickManager()->checkCollision(_sprite, _direction, _isFireBall);
     if (_isFireBall) return; // no collisisons when in fireBall mode.
     if (collisionResponse == 1)
     {

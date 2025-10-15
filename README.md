@@ -38,3 +38,15 @@ fire ball (green)
 Cause: derived powerup class (PowerUpFireBall) header file was included into the base class header causing a compiler loop
 Time to fix: 9 mins
 
+## Features added
+
+### Brick fadeout vfx on collision with ball while fireball is active
+Time to implement: 1hr 4m
+Changes made:
+- variables added to brick class to enable interpolation between 2 alpha values
+- functions added to brick class that triggers this effect when appropriate flags are set
+- modified brick class to enable queries on its destruction status (setters/getters)
+- modified brick manager class to set flags on brick when fireball has collided with it
+- modified brick manager to set flags, marking the destruction of a brick upon collision with ball
+- modified brick manager to handle destruction of bricks in render cycle (removes from vector if marked for destruction)
+
